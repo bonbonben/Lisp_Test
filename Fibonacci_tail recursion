@@ -1,0 +1,6 @@
+(defun fib2(n)
+(labels ((fib2 (n x y)
+(if (= n 0)
+x
+(fib2 (- n 1) y (+ x y)))))
+(fib2 n 0 1)))
